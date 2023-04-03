@@ -6,13 +6,13 @@ from numpy.typing import NDArray
 
 
 class Base(Protocol):
-    colors: dict[str, NDArray[np.uint8]]
+    _colors: dict[str, NDArray[np.uint8]]
 
     @classmethod
     def get_dominant_color(cls, image: NDArray[np.uint8]) -> str:
         dominant_color, min_distance = "", float("+inf")
 
-        for color_hex, color_array in cls.colors.items():
+        for color_hex, color_array in cls._colors.items():
             score = np.mean(
                 np.sqrt(
                     np.sum(
@@ -30,8 +30,8 @@ class Base(Protocol):
 
 
 class RGB(Base):
-    colors = const.RGBt
+    _colors = const.RGB
 
 
 class RYB(Base):
-    colors = const.RYBt
+    _colors = const.RYB

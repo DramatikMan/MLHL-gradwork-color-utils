@@ -1,3 +1,6 @@
+### ~ development ~ ###
+*.sh
+
 ### ~ Python ~ ###
 __pycache__
 pdm.lock
