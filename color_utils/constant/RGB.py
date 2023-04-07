@@ -1,7 +1,6 @@
 import numpy as np
 from numpy.typing import NDArray
 
-
 RGB: dict[str, tuple[int, int, int]] = {
     "#FF0000": (255, 0, 0),  # red
     "#FF8000": (255, 128, 0),

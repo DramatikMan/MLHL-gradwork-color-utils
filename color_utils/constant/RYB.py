@@ -1,7 +1,6 @@
 import numpy as np
 from numpy.typing import NDArray
 
-
 RYB: dict[str, tuple[int, int, int]] = {
     "#FE2712": (254, 39, 18),  # red
     "#FC600A": (252, 96, 10),  # red-orange

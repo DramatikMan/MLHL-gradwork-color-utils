@@ -1,8 +1,9 @@
 from typing import Protocol
-from . import constant as const
 
 import numpy as np
 from numpy.typing import NDArray
+
+from . import constant as const
 
 
 class Base(Protocol):
