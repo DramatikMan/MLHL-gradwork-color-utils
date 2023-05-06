@@ -18,7 +18,6 @@ RYB: dict[str, tuple[int, int, int]] = {
 
 RYBt: dict[str, NDArray[np.uint8]] = {}
 
-
 for key, value in RYB.items():
     tensor = np.zeros((224, 224, 3), dtype=np.uint8)
     tensor[:, :] = value
